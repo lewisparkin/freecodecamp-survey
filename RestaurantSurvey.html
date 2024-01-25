@@ -1,69 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
   <link rel="stylesheet" href="restaurantsurveystyles.css">
-  <head>
-    <meta charset="utf-8">
-    <title>Restaurant Survey</title>
-  </head>
-  <body>
-   <form id="survey-form">
+  <meta charset="utf-8">
+  <title>Restaurant Survey</title>
+</head>
+
+<body>
+  <form id="survey-form">
     <h1 id="title">Restaurant Survey Form</h1>
     <p id="description">Please take the time to improve our restaurant by completing this survey</p>
+    
+    <div>
+      <label id="name-label">Please enter your full name: <input id="name" type="text" required placeholder="John Smith"></label>
+    </div>
+    
+    <div>
+      <label id="email-label">Please enter your email: <input id="email" type="email" required placeholder="johnsmith@email.com"></input></label>
+    </div>
+    
+    <div>
+      <label id="number-label">Please enter your number: <input id="number" type="number" placeholder="07123456789" min="0" max="99999999999"> (not required)</input></label>
+    </div>
+    
+    <div>
+      <label>Please enter the date of your visit: <input id="date" type="text" required placeholder="DD/MM/YY"></input></label>
+    </div>
+    
+    <section>
+      <h4>Using a scale of 1 to 5, please answer these questions: </h4>
+      
       <div>
-       <label id="name-label">Please enter your full name: <input id="name" type="text" required placeholder="John Smith"></label>
-      </div>
-      <div>
-       <label id="email-label">Please enter your email: <input id="email" type="email" required placeholder="johnsmith@email.com"></input></label>
-      </div>
-      <div>
-        <label id="number-label">Please enter your number: <input id="number" type="number" placeholder="07123456789" min="0" max="99999999999"> (not required)</input></label>
-      </div>
-      <div>
-       <label>Please enter the date of your visit: <input id="date" type="text" required placeholder="DD/MM/YY"></input></label>
-      </div>
-      <section>
-       <h4>Using a scale of 1 to 5, please answer these questions: </h4>
-       <div>
         <label>Wait time to be seated: <input id="seating-time" type="number" min="0" max="5"></input></label>
-       </div>
-       <div>
+      </div>
+      
+      <div>
         <label>Presence of waiter: <input id="waiter-presence" type="number" min="0" max="5"></input></label>
-       </div>
-       </div>
-       <div>
+      </div>
+      
+      <div>
         <label>Wait time for food: <input id="food-time" type="number" min="0" max="5"></input></label>
-       </div>
-       <div>
+      </div>
+      
+      <div>
         <label>Food: <input id="food" type="number" min="0" max="5"></input></label>
-       </div>
-       <div>
+      </div>
+      
+      <div>
         <label>Price: <input id="price" type="number" min="0" max="5"></input></label>
-       </div>
-     </section>
-     <section>
-       <div>
-         <label>What was your favourite part of the restaurant?: </label>
-         <select id="dropdown">
-           <option id="atmosphere">Atmosphere</option>
-           <option id="quality-of-service">Quality of Service</option>
-           <option id="fav-price">Price</option>
-           <option id="Food">Food</option>
-         </select>
-        </div>
-      <section>
-        <h4>Would you return to our restaurant?</h4>
-          <input value="1" name="would-you-return" type="radio"> Yes</input>
-          <input value= "2" name="would-you-return" type="radio"> No</input>
-      </section>
-      <section>
-       <p>Would you like to recieve updates and offers about our restaurant?:</p>
-        <input type="checkbox" value="1"> SMS</input>
-        <input type="checkbox" value="2"> Email</input>
-      </section>
-      <section>
-        <p> We welcome any extra comments you may have: </p>
-        <textarea rows="10" cols="40"></textarea>
-        <br>
-        <button id="submit">Submit</button>
-    </form>
+      </div>
+    </section>
+    
+    <section>
+      <div>
+        <label>What was your favourite part of the restaurant?: </label>
+        <select id="dropdown">
+          <option id="atmosphere">Atmosphere</option>
+          <option id="quality-of-service">Quality of Service</option>
+          <option id="fav-price">Price</option>
+          <option id="Food">Food</option>
+        </select>
+      </div>
+    </section>
+    
+    <section>
+      <h4>Would you return to our restaurant?</h4>
+      <input value="1" name="would-you-return" type="radio"> Yes</input>
+      <input value="2" name="would-you-return" type="radio"> No</input>
+    </section>
+    
+    <section>
+      <p>Would you like to receive updates and offers about our restaurant?:</p>
+      <input type="checkbox" value="1"> SMS</input>
+      <input type="checkbox" value="2"> Email</input>
+    </section>
+    
+    <section>
+      <p>We welcome any extra comments you may have: </p>
+      <textarea rows="10" cols="40"></textarea>
+      <br>
+      <button id="submit">Submit</button>
+    </section>
+  </form>
+</body>
 </html>
