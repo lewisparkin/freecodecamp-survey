@@ -3,17 +3,18 @@ form {
     text-align: center;
     color: white;
     padding-top: 5px;
+    background-color: rgb(20, 25, 40);
+    padding-bottom: 40px;
+    border-radius: 5%;
   }
-  body {
+  
+body {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-  }
-  
-  form {
-    background-color: rgb(20, 25, 40);
-    padding-bottom: 40px;
-  }
-  body {
     background-image: url(https://toohotel.com/wp-content/uploads/2022/09/TOO_restaurant_Panoramique_vue_Paris_nuit_v2-scaled.jpg)
   }
+
+.divider {
+  margin: 20px 0 20px 0
+}
